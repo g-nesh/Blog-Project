@@ -45,7 +45,7 @@ export class AuthService {
       console.log("Appwrite service :: getCurrentUser :: error", error);
     }
 
-    return null;
+    return null;                                    
   }
 
   async logout() {
@@ -57,6 +57,6 @@ export class AuthService {
   }
 }
 
-const authService = new authService();
+const authService = new AuthService();
 
 export default authService;
